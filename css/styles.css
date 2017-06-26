@@ -1,33 +1,76 @@
+@font-face {
+	font-family: "Benne";
+	src: url('../fonts/benne/Benne-Regular.otf');
+}
+
+@font-face {
+	font-family: "Capsuula";
+	src: url('../fonts/capsuula/Capsuula.ttf');
+}
+
 * {
 	box-sizing: border-box;
 	border: none;
 	margin: 0;
 	padding: 0;
+	color: #222;
+}
+
+body {
+	background-color: #eee;
+}
+
+main {
+	margin: 2em 2em;
 }
 
 header {
-	display: block;
-	position: relative;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	background-color: #885B07;
-	height: 10em;
+	background-color: #306C48;
 }
 
-header img, nav {
-	float: left;
+header > div {
+	padding: 0.7em;
+	flex: 1 1;
+}
+
+header > div:first-child {
+	margin-left: 3em;
+}
+
+header > div:hover {
+	background-color: #124025;
+}
+
+header > div:hover:first-child {
+	background-color: #306C48;
+}
+
+header > div > p {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 header img {
-	display: block;
-	position: absolute;
-	width: 13%;
-	top: -5%;
+	width: 40px;
 }
 
 h2 {
-
+	font-family: "Capsuula", sans-serif;
+	margin-left: 1.2em;
+	margin-bottom: 1.2em
 }
 
-p {
+main > p {
 	width: 80em;
+	font-family: "Benne", serif;
+	margin-bottom: 0.6em;
+	line-height: 1.2em;
 }
